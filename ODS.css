@@ -1,0 +1,748 @@
+/* barra lateral */
+
+#check{
+   display: none;
+  }
+
+  #icone{
+     cursor: pointer;
+     padding: 15px;
+     position: absolute;
+     z-index: 10;
+     position: fixed;
+  }
+
+  .barra{
+     background-color: rgba(51, 51, 51, 0.973);
+     height:100% ;
+     width:300px ;
+     position: fixed;
+     transition: all .2s linear;
+     left:-300px;
+     z-index: 9;
+  }
+
+  nav{
+     width: 100%;
+     position: absolute;
+     top: 60px;
+  }
+
+  nav a{
+ 
+     text-decoration: none;
+
+  }
+
+  .linkar{
+
+     background-color:#494950c9 ;
+     padding: 20px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size:12pt;
+     transition: all .2s linear;
+     color: #f4f4f9;
+     border-bottom: 2px solid rgba(34, 34, 34, 0.959) ;
+     opacity: 0;
+     margin-top: 200px;
+     
+  }
+  
+  .linkar:hover{
+     background-color: #050542;
+
+  }
+
+
+  #check:checked ~ .barra{
+
+     transform: translateX(300px) ;
+  }
+
+  #check:checked ~ .barra nav a .linkar{
+
+  opacity: 1;
+  margin-top: 0;
+  transition-delay: .2s;
+  }
+
+   
+ 
+ 
+ 
+ /* geral */
+
+
+ html,
+ body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+ }
+
+
+ header {
+    background-color:rgb( 192, 230, 253);
+    color: white;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+ }
+
+ #logo {
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    margin-left: 3%;
+ }
+
+ #menu {
+    float: right;
+    margin-right: 2%;
+    list-style: none;
+    margin-top: 0px;
+ }
+
+ .cursor {
+    cursor: pointer;
+    text-decoration: none;
+    cOLOR: #6e6e6e;;
+
+ }
+
+ li {
+    float: left;
+    padding: 20px 10px 20px 10px;
+
+ }
+
+ li:hover {
+    background-color: #01AAEA;
+
+ }
+
+
+ .title_center {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: xx-large;
+ }
+
+ .borders {
+    border-radius: 5%;
+ }
+
+ .justificado {
+
+    text-align: justify;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+ }
+
+ hr {
+
+    width: 3rem;
+    margin-bottom: 2%;
+    text-align: center;
+ }
+
+ 
+ /* Capa */
+
+
+ #capa {
+    background: url("img/agua1.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+ }
+
+ #ods {
+    font-size: large;
+    text-decoration: none;
+    color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 3px 6px;
+    position: absolute;
+    left: 52%;
+    top: 60%;
+    transform: translateX(-80%) translateY(50%);
+    cursor: pointer;
+
+ }
+
+ #ods:hover {
+    background-color: rgba(123, 185, 185, 0.753);
+
+ }
+
+ h1 {
+    color: white;
+    padding-top: 14%;
+    font-size: 60px;
+    line-height: 0.6;
+    color: rgb(0, 0, 0);
+    font-size: 70px;
+    text-shadow: white 3px 2px;
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    
+
+ }
+
+ #sub {
+    color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-top: 3px solid white;
+    text-shadow: 1px 1px black;
+    font-size: 30px;
+    color: whitesmoke(179, 86, 86);
+    margin: 0 400px 10px;
+    text-align: center;
+    transform: translateX(-3%) translateY(-50%);
+ }
+
+ /* Projeto */
+ #primeiroespac {
+
+    padding-top: 3%;
+ }
+
+ .coluna {
+    float: left;
+    padding: 0 5%;
+    width: 40%;
+ }
+
+ #altura {
+    padding-top: 4.4%;
+ }
+
+ #project {
+
+    padding: 20px;
+    border-left: 1.6vw #0F689C solid;
+    border-right: 1.6vw #0F689C solid;
+    background-color: #f7f7f7;
+ }
+
+
+
+ /* Água Potavel */
+
+ .coluna2 {
+    float: left;
+    padding: 0 5%;
+    width: 40%;
+ }
+
+ #wat{
+
+   padding-top: 3.5%;
+ }
+ .espacamento1 {
+    padding-top: 3%;
+ }
+
+ #potavel {
+    width: 100%;
+    height: 40%;
+    padding-top: 8%;
+ }
+
+ #aguap {
+    padding: 20px;
+    border-left: 1.6vw #4ABDFF solid;
+    border-right: 1.6vw #4ABDFF solid;
+ }
+
+ #dist {
+    padding-top: 12%;
+ }
+
+ /* transformacoes */
+
+ #esq {
+    padding-left: 4%;
+ }
+
+ #direita {
+    padding-right: 5%;
+
+
+ }
+
+ #segundoespac {
+    padding-top: 6%;
+ }
+
+ #xo {
+    width: 90%;
+ }
+
+ .tops {
+    padding: 15%;
+    padding-left: 0%;
+    padding-top: 0%;
+ }
+
+ #sub1 {
+
+    text-align: center;
+    font-size: 25px;
+    padding: 2%;
+
+ }
+
+
+ .cima {
+    padding-top: 15%;
+
+
+ }
+
+ #sub2 {
+
+    text-align: center;
+    font-size: 25px;
+    padding: 2%;
+
+ }
+
+ #sub3 {
+    text-align: center;
+    font-size: 25px;
+    padding: 2%;
+
+ }
+
+ #transformacao {
+    border-left: 1.6vw #43ACE8 solid;
+    border-right: 1.6vw #43ACE8 solid;
+    background-color: #f7f7f7;
+ }
+
+ .colunax {
+    float: left;
+    padding: 0 5%;
+    width: 40%;
+ }
+
+ .colunay {
+    float: right;
+    padding: 0 5%;
+    width: 40%;
+
+ }
+
+ .links {
+    text-decoration: none;
+    font-size: large;
+    color: crimson;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 3px 6px;
+    position: absolute;
+    left: 23%;
+    cursor: pointer;
+
+ }
+
+ .links2 {
+
+    text-decoration: none;
+    font-size: large;
+    color: crimson;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 3px 6px;
+    position: absolute;
+    left: 70%;
+    cursor: pointer;
+
+ }
+
+ .esp {
+
+    padding: 8%;
+    padding-left: 5%;
+    padding-right: 0%;
+    padding-top: 9%;
+
+ }
+
+ .esp2 {
+
+    padding: 8%;
+    padding-left: 5%;
+    padding-right: 0%;
+    padding-top: 5%;
+
+ }
+
+ .esp3 {
+
+    padding: 8%;
+    padding-left: 5%;
+    padding-right: 0%;
+    padding-top: 1%;
+
+ }
+
+ /*Brasil*/
+
+ .br1 {
+
+    width: 100%;
+
+ }
+
+ #br2 {
+
+    padding-top: 20%;
+    padding: 5%;
+
+ }
+
+
+ #terceiroespac {
+
+    padding-top: 5%;
+ }
+
+ #brasil {
+    border-left: 1.6vw #9C5900 solid;
+    border-right: 1.6vw #9C5900 solid;
+ }
+
+ .floatbrasil {
+    float: left;
+    padding: 0 6%;
+    width: 38%;
+    padding-right: 5%;
+ }
+
+ #direita1 {
+    padding-left: 7.5%;
+    padding-top: 0%;
+ }
+
+ /* ongs */
+
+ #quartoespac {
+    padding-top: 5%;
+ }
+
+ #ongs {
+    padding: 20px;
+    border-left: 1.6vw #9C5900 solid;
+    border-right: 1.6vw #9C5900 solid;
+    background-color: #f7f7f7;
+
+ }
+
+ #peg {
+    padding-left: 3%;
+ }
+
+ .fl {
+    float: left;
+    width: 40%;
+    padding: 0 5%;
+    
+ }
+
+ .tamanhoicon {
+    width: 50%;
+    padding-left: 25%;
+    padding-top: 5%;
+ }
+
+
+
+ #tamanho1 {
+    width: 55%;
+ }
+
+ /*Sobre*/
+
+ #quintoespac {
+    padding-top: 2%;
+ }
+
+ #eu {
+    width: 60%;
+    height: 30%;
+    padding-left: 5%;
+ }
+
+ #silas {
+
+    padding: 20px;
+    border-left: 1.6vw rgba(173, 107, 21, 0.692)solid;
+    border-right: 1.6vw rgba(173, 107, 21, 0.692) solid;
+ }
+
+ .coluna7 {
+    float: left;
+    position: relative;
+    width: 40%;
+    padding-top: 2%;
+    padding-left: 10%;
+
+ }
+
+ .ir {
+    text-decoration: none;
+    color: rgb(0, 102, 255);
+    cursor: pointer;
+ }
+
+
+ section {
+    float: left;
+
+ }
+
+/* Configuração do RODA PÉ*/
+
+.colunm-two{
+   float: left;
+   padding: 0 5%;
+   width: 35%;
+}
+
+#beca{
+   font-size: 0.9rem;
+}
+
+footer {
+   width: 100%;
+   background-color:#636e72;
+   float: left;
+   color: whitesmoke;
+}
+footer a{
+   text-decoration: none;
+   color: whitesmoke;
+}
+footer p {
+   margin: 0;
+   font-size: 0.9rem;
+}
+footer h4 {
+   font-family: "Open Sans", sans-serif;
+   font-size: 1.6rem;
+   color:whitesmoke;
+   text-align:left;
+   padding: 0;
+}
+.icons-footer {
+   padding: 0.5rem 1rem 0.5rem 0rem;
+   width: 25px;
+   height: 20px;
+   margin: 0;
+}
+.email, .linkedin, .github {
+   display: flex;
+   align-items: center;
+   margin:.3rem;
+}
+.data {
+   text-align:right;
+   font-size: .9rem;
+   transform: translateX(11%) translateY(10%);
+   padding: 5%;
+   padding-top: 0;
+} 
+#final1{
+padding-left: 10%;
+}
+
+#final2{
+   padding-top: 3%;
+   padding-left: 10%;
+   padding-right: 0;
+}
+
+
+ /* Responsividade */
+
+ @media all and (max-width: 770px) {
+
+   h1{
+      z-index: 0;
+   }
+    #menu {
+       visibility: hidden;
+
+    }
+
+    .coluna,
+    .coluna2,
+    .coluna3,
+    .coluna7,
+    .colunax,
+    .colunay,
+    .floatbrasil,
+    .fl {
+       display: block;
+       width: 80%;
+       padding: 0;
+       margin: 10px auto;
+       float: none;
+    }
+
+    #logocenter {
+       width: 100%;
+       position: relative;
+       text-align: center;
+       margin-left: 0;
+    }
+
+    #logo {
+       margin-left: 0px;
+       transform: translateX(-50%);
+    }
+
+    #capa {
+
+       background-size: 100% 100%;
+
+    }
+
+    .tamanhoicon {
+       padding: 10%;
+       padding-left: 25%;
+    }
+
+    #ods {
+       font-size: small;
+       top: 50%;
+       transform: translateX(-45%) translateY(50%);
+
+    }
+
+
+
+    h1 {
+       padding-top: 60%;
+       line-height: 0.6;
+       font-size: 30px;
+       text-align: center;
+
+    }
+
+    #sub {
+
+       font-size: 20px;
+       text-align: center;
+       transform: translateX(0%) translateY(-50%);
+       margin-left: 20%;
+       margin-right: 20%;
+    }
+
+    .br1,
+    .br2 {
+
+       width: 100%;
+
+    }
+
+    .links {
+
+       left: 38%;
+    }
+
+    .links2 {
+       left: 38%;
+    }
+
+    .tops {
+       padding-top: 25%;
+    }
+
+    .colunm-two{
+       float: none;
+       width: 85%;
+    }
+
+    .data {
+      text-align:right;
+      font-size: .9rem;
+      transform: translateX(0%) translateY(0%);
+      padding: 0%;
+      padding-top: 0;
+ }
+#eu{
+   padding-left: 6%;
+   padding-right: 0;
+   width: 90%;
+}
+
+#ja{
+   padding-left: 2.4%;
+}
+
+#ods{
+  
+   transform: translateX(-56%) ;
+   font-size: 0.9rem;
+   
+}
+
+#logocenter{
+   transform: translateX(1%);
+}
+
+.alingresp{
+
+  width: 95%;
+  padding-left: 5%;
+
+ }
+
+ #direita1{
+
+   padding-left: 0;
+   
+}
+ }
+
+ @media all and (max-width: 1024px) {
+
+   #ods {
+     
+      transform: translateX(-45%) translateY(-205%);
+   }
+
+   #titulo_capa{
+             
+         transform:  translateY(-25%);
+
+   }
+
+   .links{
+              
+         transform: translateX(45%) translateY(00%);
+
+   }
+
+   .links2{
+
+      transform: translateX(45%) translateY(00%);
+
+   }
+
+
+   }
+
+   @media all and (min-width: 771px) {
+
+      #icone{
+    display: none;
+      }
+   }
